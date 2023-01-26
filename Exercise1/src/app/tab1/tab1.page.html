@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1w
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <form [formGroup]="myForm" (submit)="submitForm()" novalidate>
+    <ion-list>
+      <ion-item>
+        <ion-label>Name: </ion-label>
+        <ion-input formControlName="Name"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Password :</ion-label>
+        <ion-input formControlName="password" type="password"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Phone :</ion-label>
+        <ion-input formControlName="phone"></ion-input>
+      </ion-item>
+
+      <ion-button type="submit">Save</ion-button>
+    </ion-list>
+  </form>
+</ion-content>
